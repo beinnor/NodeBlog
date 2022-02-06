@@ -7,7 +7,13 @@
 import app from '../app';
 import debugLib from 'debug';
 import http from 'http';
+import createDatabase from '../config/databaseconfig';
 const debug = debugLib('my-express-boilerplate:server');
+
+/**
+ * Create database
+ */
+createDatabase();
 
 /**
  * Get port from environment and store in Express.
