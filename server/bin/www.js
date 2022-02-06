@@ -19,7 +19,7 @@ createDatabase();
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.NODE_LOCAL_PORT || '3000');
 app.set('port', port);
 console.log(`Port set to: ${port}`);
 
