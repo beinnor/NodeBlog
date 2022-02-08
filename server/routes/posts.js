@@ -1,8 +1,10 @@
+import createDatabase from '../config/databaseconfig';
 import express from 'express';
 const router = express.Router();
 
 /* GET all posts. */
 router.get('/', function(req, res) {
+  createDatabase();
   res.send('all posts');
 });
 

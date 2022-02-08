@@ -30,8 +30,13 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+    env_file: ./.env
     environment:
       NODE_ENV: development
+      HOST: $MYSQL_HOST
+      MYSQL_LOCAL_PORT: $MYSQL_LOCAL_PORT
+      MYSQL_USER: $MYSQL_USER
+      MYSQL_PASSWORD: $MYSQL_PASSWORD
     ports:
       - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
     depends_on:
