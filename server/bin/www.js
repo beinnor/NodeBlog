@@ -4,16 +4,16 @@
  * Module dependencies.
  */
 
-import app from '../app';
+import app from '../app.js';
 import debugLib from 'debug';
 import http from 'http';
-//  import createDatabase from '../config/databaseconfig';
+import { createDatabaseTable } from '../config/mysqlSetup.js';
 const debug = debugLib('my-express-boilerplate:server');
 
 /**
  * Create database
  */
-//createDatabase();
+createDatabaseTable();
 
 /**
  * Get port from environment and store in Express.
