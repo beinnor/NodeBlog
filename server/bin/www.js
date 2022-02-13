@@ -7,13 +7,7 @@
 import app from '../app.js';
 import debugLib from 'debug';
 import http from 'http';
-import { createDatabaseTable } from '../config/mysqlSetup.js';
 const debug = debugLib('my-express-boilerplate:server');
-
-/**
- * Create database
- */
-createDatabaseTable();
 
 /**
  * Get port from environment and store in Express.

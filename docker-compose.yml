@@ -15,7 +15,8 @@ services:
     volumes: 
       - db-config:/etc/mysql
       - db-data:/var/lib/mysql
-      - ./db/backup/files/:/data_backup/data
+      - ./mysql/backup/files/:/data_backup/data
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
 
   adminer:
     image: adminer    
