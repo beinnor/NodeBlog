@@ -1,6 +1,6 @@
 # NodeBlog
 
-This is a simple REST api using Node, Express and MySql. Hosted at [Digital Ocean](http://142.93.229.153).
+This is a simple REST api using Node, Express and MySql. Hosted in docker containers [here](http://142.93.229.153).
 
 It has the following routes/endpoints:
 
